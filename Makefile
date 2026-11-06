@@ -7,7 +7,7 @@ SRC = src/main.c src/parsing.c src/timing.c src/logging.c \
       src/monitor.c src/edf_schedule.c src/init.c src/cleanup.c src/threads.c
 OBJ = $(SRC:.c=.o)
 
-.PHONY: all clean fclean re test test-scale
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
@@ -23,12 +23,4 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re:
-	$(MAKE) fclean
-	$(MAKE) all
-
-test: $(NAME)
-	python3 tests/verify.py --quick
-
-test-scale: $(NAME)
-	python3 tests/verify.py --scale
+re: fclean all

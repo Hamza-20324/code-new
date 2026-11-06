@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   grant.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <yourlogin@student.42.fr>        +#+  +:+       +#+        */
+/*   By: zhamza <zhamza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/30 00:00:00 by yourlogin         #+#    #+#             */
-/*   Updated: 2026/10/30 00:00:00 by yourlogin        ###   ########.fr       */
+/*   Created: 2026/11/06 02:37:26 by zhamza            #+#    #+#             */
+/*   Updated: 2026/11/06 02:37:54 by zhamza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "codexion.h"
 
-/* All calls hold sim->mutex; pair locks protect physical dongle state. */
 static int	pair_available_locked(t_coder *coder, long long now)
 {
 	t_sim		*sim;
@@ -30,7 +29,6 @@ static int	pair_available_locked(t_coder *coder, long long now)
 	return (available);
 }
 
-/* A higher-priority waiter only blocks us if it can take its WHOLE pair. */
 static int	priority_ok_locked(t_coder *coder, int dongle, long long now)
 {
 	t_sim	*sim;

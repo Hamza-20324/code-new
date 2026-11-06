@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   cleanup.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <yourlogin@student.42.fr>        +#+  +:+       +#+        */
+/*   By: zhamza <zhamza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/30 00:00:00 by yourlogin         #+#    #+#             */
-/*   Updated: 2026/10/30 00:00:00 by yourlogin        ###   ########.fr       */
+/*   Created: 2026/11/06 02:36:28 by zhamza            #+#    #+#             */
+/*   Updated: 2026/11/06 02:36:32 by zhamza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "codexion.h"
-#include <stdlib.h>
 
 void	cleanup_sim(t_sim *sim)
 {

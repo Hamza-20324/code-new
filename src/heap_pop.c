@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   heap_pop.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <yourlogin@student.42.fr>        +#+  +:+       +#+        */
+/*   By: zhamza <zhamza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/30 00:00:00 by yourlogin         #+#    #+#             */
-/*   Updated: 2026/10/30 00:00:00 by yourlogin        ###   ########.fr       */
+/*   Created: 2026/11/06 02:37:58 by zhamza            #+#    #+#             */
+/*   Updated: 2026/11/06 02:38:02 by zhamza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,6 @@ int	heap_pop(t_sim *sim, t_heap *heap)
 	return (result);
 }
 
-/* A dongle has at most two neighbors, so removing either entry keeps
- * its (at most one-element) remaining queue a valid binary heap. */
 int	heap_remove(t_heap *heap, int id)
 {
 	int	i;

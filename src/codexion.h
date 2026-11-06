@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   codexion.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <yourlogin@student.42.fr>        +#+  +:+       +#+        */
+/*   By: zhamza <zhamza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/30 00:00:00 by yourlogin         #+#    #+#             */
-/*   Updated: 2026/10/30 00:00:00 by yourlogin        ###   ########.fr       */
+/*   Created: 2026/11/06 02:36:38 by zhamza            #+#    #+#             */
+/*   Updated: 2026/11/06 02:41:04 by zhamza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 # include <pthread.h>
 # include <time.h>
 # include <stddef.h>
+# include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
+# include <limits.h>
 
 typedef enum e_policy
 {
@@ -25,13 +29,13 @@ typedef enum e_policy
 
 typedef struct s_config
 {
-	int		count;
-	int		burnout;
-	int		compile;
-	int		debug;
-	int		refactor;
-	int		required;
-	int		cooldown;
+	int			count;
+	int			burnout;
+	int			compile;
+	int			debug;
+	int			refactor;
+	int			required;
+	int			cooldown;
 	t_policy	policy;
 }	t_config;
 
@@ -50,7 +54,7 @@ typedef struct s_dongle
 	t_heap			queue;
 }	t_dongle;
 
-struct s_sim;
+struct	s_sim;
 
 typedef struct s_coder
 {

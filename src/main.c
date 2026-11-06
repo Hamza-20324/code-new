@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <yourlogin@student.42.fr>        +#+  +:+       +#+        */
+/*   By: zhamza <zhamza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/30 00:00:00 by yourlogin         #+#    #+#             */
-/*   Updated: 2026/10/30 00:00:00 by yourlogin        ###   ########.fr       */
+/*   Created: 2026/11/06 02:38:17 by zhamza            #+#    #+#             */
+/*   Updated: 2026/11/06 02:38:20 by zhamza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "codexion.h"
-#include <unistd.h>
-#include <string.h>
 
 static int	error_message(char *message)
 {
